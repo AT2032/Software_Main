@@ -281,7 +281,7 @@ void setup() {
     }
   }
 
-  add_repeating_timer_us(10000, speaker, NULL, &st_timer);
+  add_repeating_timer_us(10000, speaker, NULL, &st_timer); //スピーカー割り込み処理
   
   // センサー・各基板の起動を待機
   for (int i = 0; i < 3; i++) {
